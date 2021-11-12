@@ -24,9 +24,9 @@ use crate::Scalar;
 #[cfg_attr(docsrs, doc(cfg(feature = "groups")))]
 #[derive(Copy, Clone, Debug)]
 pub struct G2Affine {
-    pub(crate) x: Fp2,
-    pub(crate) y: Fp2,
-    infinity: Choice,
+    pub x: Fp2,
+    pub y: Fp2,
+    pub infinity: Choice,
 }
 
 impl Default for G2Affine {
